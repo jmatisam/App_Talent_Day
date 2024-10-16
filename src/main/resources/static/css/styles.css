@@ -1,0 +1,1212 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+
+
+html, body {
+    height: 90%;
+  }
+  
+  body {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    background-color: #000;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.125), rgba(255, 255, 255, 0)), linear-gradient(to bottom, #000, #000 2px, #111 3px);
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-size: cover, 100% 3px;
+    font-size: calc(10px + 2vw);
+    font-family: 'VT323', monospace, 'Exo',sans-serif;
+    color: #3f3;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body::after {
+    content: "​";
+    position: relative;
+    top: -13px;
+    display: inline-block;
+    padding-right: 3px;
+    padding-right: calc(3px + 0.1vw);
+    border-right: 10px solid rgba(51, 255, 51, 0.75);
+    border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
+    text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
+    white-space: nowrap;
+    -webkit-animation: typed 18.36s linear 1s infinite, beam-blink 1s infinite;
+            animation: typed 18.36s linear 1s infinite, beam-blink 1s infinite;
+  }
+  @media (max-width: 575px) {
+    body::after {
+      top: -33px;
+    }
+  }
+  body::before {
+    content: "+ 100 Coder´s / 40 Empresas / enjoy the experience";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 3px 0;
+    background: #00f;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+    white-space: pre-wrap;
+  }
+  @media (max-width: 575px) {
+    body::before {
+      content: "3 strings \a 52 chars \a 18.36s duration";
+    }
+  }
+
+body{
+    
+}
+
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+.area{
+    background: #4e54c8;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height:100vh;
+    
+   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+@-webkit-keyframes typed {
+  /* string 1, char 1 */
+  0%, 0.5436623094% {
+    content: "HI";
+  }
+  /* string 1, char 2 */
+  0.5446623094%, 1.0883246187% {
+    content: "HI W";
+  }
+  /* string 1, char 3 */
+  1.0893246187%, 1.6329869281% {
+    content: "HI WE";
+  }
+  /* string 1, char 4 */
+  1.6339869281%, 2.1776492375% {
+    content: "HI Wel";
+  }
+  /* string 1, char 5 */
+  2.1786492375%, 2.7223115468% {
+    content: "HI Welc";
+  }
+  /* string 1, char 6 */
+  2.7233115468%, 3.2669738562% {
+    content: "HI Welco";
+  }
+  /* string 1, char 7 */
+  3.2679738562%, 3.8116361656% {
+    content: "HI Welcom";
+  }
+  /* string 1, char 8 */
+  3.8126361656%, 4.3562984749% {
+    content: "HI Welcome ";
+  }
+  /* string 1, char 9 */
+  4.3572984749%, 4.9009607843% {
+    content: "HI Welcome To";
+  }
+  /* string 1, char 10 */
+  4.9019607843%, 5.4456230937% {
+    content: "HI Welcome To ";
+  }
+  /* string 1, char 11 */
+  5.4466230937%, 5.9902854031% {
+    content: "HI Welcome To A";
+  }
+  /* string 1, char 12 */
+  5.9912854031%, 6.5349477124% {
+    content: "HI Welcome To Ap";
+  }
+  /* string 1, char 13 */
+  6.5359477124%, 7.0796100218% {
+    content: "HI Welcome To App";
+  }
+  /* string 1, char 14 */
+  7.0806100218%, 7.6242723312% {
+    content: "HI Welcome To AppT";
+  }
+  /* string 1, char 15 */
+  7.6252723312%, 8.1689346405% {
+    content: "HI Welcome To AppTa";
+  }
+  /* string 1, char 16 */
+  8.1699346405%, 8.7135969499% {
+    content: "HI Welcome To AppTal";
+  }
+  /* string 1, char 17 */
+  8.7145969499%, 9.2582592593% {
+    content: "HI Welcome To AppTale";
+  }
+  /* string 1, char 18 */
+  9.2592592593%, 9.8029215686% {
+    content: "HI Welcome To AppTalen";
+  }
+  /* string 1, char 19 */
+  9.8039215686%, 10.347583878% {
+    content: "HI Welcome To AppTalenD";
+  }
+  /* string 1, char 20 */
+  10.348583878%, 10.8922461874% {
+    content: "HI Welcome To AppTalenDa";
+  }
+  /* string 1, char 21 */
+  10.8932461874%, 11.4369084967% {
+    content: "HI Welcome To AppTalenDay";
+  }
+  /* string 1, char 22 */
+  11.4379084967%, 23.310546841% {
+    content: "HI Welcome To AppTalenDay!";
+  }
+  /* string 1, char 23 */
+  23.311546841%, 23.7462766885% {
+    content: "HI Welcome To AppTalenDa";
+  }
+  /* string 1, char 24 */
+  23.7472766885%, 24.1820065359% {
+    content: "HI Welcome To AppTalenD";
+  }
+  /* string 1, char 25 */
+  24.1830065359%, 24.6177363834% {
+    content: "HI Welcome To AppTalen";
+  }
+  /* string 1, char 26 */
+  24.6187363834%, 25.0534662309% {
+    content: "HI Welcome To AppTale";
+  }
+  /* string 1, char 27 */
+  25.0544662309%, 25.4891960784% {
+    content: "HI Welcome To AppTa";
+  }
+  /* string 1, char 28 */
+  25.4901960784%, 25.9249259259% {
+    content: "HI Welcome To AppT";
+  }
+  /* string 1, char 29 */
+  25.9259259259%, 26.3606557734% {
+    content: "HI Welcome To App";
+  }
+  /* string 1, char 30 */
+  26.3616557734%, 26.7963856209% {
+    content: "HI Welcome To Ap";
+  }
+  /* string 1, char 31 */
+  26.7973856209%, 27.2321154684% {
+    content: "HI Welcome To A";
+  }
+  /* string 1, char 32 */
+  27.2331154684%, 27.6678453159% {
+    content: "HI Welcome To ";
+  }
+  /* string 1, char 33 */
+  27.6688453159%, 28.1035751634% {
+    content: "HI Welcome To";
+  }
+  /* string 1, char 34 */
+  28.1045751634%, 28.5393050109% {
+    content: "Welcome ";
+  }
+  /* string 1, char 35 */
+  28.5403050109%, 28.9750348584% {
+    content: "HI Welcome";
+  }
+  /* string 1, char 36 */
+  28.9760348584%, 29.4107647059% {
+    content: "HI Welcom";
+  }
+  /* string 1, char 37 */
+  29.4117647059%, 29.8464945534% {
+    content: "HI Welco";
+  }
+  /* string 1, char 38 */
+  29.8474945534%, 30.2822244009% {
+    content: "HI Welc";
+  }
+  /* string 1, char 39 */
+  30.2832244009%, 30.7179542484% {
+    content: "HI Wel";
+  }
+  /* string 1, char 40 */
+  30.7189542484%, 31.1536840959% {
+    content: "HI We";
+  }
+  /* string 1, char 41 */
+  31.1546840959%, 31.5894139434% {
+    content: "HI W";
+  }
+  /* string 1, char 42 */
+  31.5904139434%, 32.0251437908% {
+    content: "Bye";
+  }
+  /* string 1, char 43 */
+  32.0261437908%, 32.4608736383% {
+    content: "Bye";
+  }
+  /* string 1, char 44 */
+  32.4618736383%, 37.907496732% {
+    content: "​";
+  }
+/* string 1, char 44 */
+32.4618736383%, 37.907496732% {
+    content: "▓";
+  }
+  /* string 2, char 1 */
+  37.908496732%, 38.4521590414% {
+    content: "▐";
+  }
+  /* string 2, char 2 */
+  38.4531590414%, 38.9968213508% {
+    content: "█░";
+  }
+  /* string 2, char 3 */
+  38.9978213508%, 39.5414836601% {
+    content: "█░ ";
+  }
+  /* string 2, char 4 */
+  39.5424836601%, 40.0861459695% {
+    content: "█░ ▓";
+  }
+  /* string 2, char 5 */
+  40.0871459695%, 40.6308082789% {
+    content: "█░ ▓▒";
+  }
+  /* string 2, char 6 */
+  40.6318082789%, 41.1754705882% {
+    content: "█░ ▓▒▒";
+  }
+  /* string 2, char 7 */
+  41.1764705882%, 41.7201328976% {
+    content: "█░ ▓▒▒▓";
+  }
+  /* string 2, char 8 */
+  41.7211328976%, 42.264795207% {
+    content: "█░ ▓▒▒▓▒";
+  }
+  /* string 2, char 9 */
+  42.265795207%, 42.8094575163% {
+    content: "█░ ▓▒▒▓▒ ";
+  }
+  /* string 2, char 10 */
+  42.8104575163%, 43.3541198257% {
+    content: "█░ ▓▒▒▓▒ ▓";
+  }
+  /* string 2, char 11 */
+  43.3551198257%, 43.8987821351% {
+    content: "█░ typ▒▓▒ ▓▒";
+  }
+  /* string 2, char 12 */
+  43.8997821351%, 44.4434444444% {
+    content: "█░ type ▓▒▓";
+  }
+  /* string 2, char 13 */
+  44.4444444444%, 44.9881067538% {
+    content: "█░ ▓▒▒▓▒ ▓▒▓▒";
+  }
+  /* string 2, char 14 */
+  44.9891067538%, 45.5327690632% {
+    content: "█░ type ▓▒▓▒ ";
+  }
+  /* string 2, char 15 */
+  45.5337690632%, 46.0774313725% {
+    content: "█░ ▓▒▒▓▒ ▓▒▓▒ █";
+  }
+  /* string 2, char 16 */
+  46.0784313725%, 46.6220936819% {  
+    content: "█░ ▓▒▒▓▒ ▓▒▓▒ █░";
+  }
+  /* string 2, char 17 */
+  46.6230936819%, 47.1667559913% {
+    content: "█░ ▓▒▒▓▒ ▓▒▓▒ █░▒";
+  }
+  /* string 2, char 18 */
+  47.1677559913%, 47.7114183007% {
+    content: "█░ ▓▒▒▓▒ ▓▒▓▒ █░▒▓";
+  }
+  /* string 2, char 19 */
+  47.7124183007%, 48.25608061% {
+    content: "█░ ▓▒▒▓▒ ▓▒▓▒ futu▒";
+  }
+  /* string 2, char 20 */
+  48.25708061%, 48.8007429194% {
+    content: "█░ ▓▒▒▓▒ ▓▒▓▒ futur";
+  }
+  /* string 2, char 21 */
+  48.8017429194%, 49.3454052288% {
+    content: "█░ ▓▒▒▓▒ ▓▒▓▒ █░▒▓▒▓▒";
+  }
+  /* string 2, char 22 */
+  49.3464052288%, 49.8900675381% {
+    content: "█░ ▓▒▒▓▒ ▓▒▓▒ █░▒▓▒▓▒ ";
+  }
+  /* string 2, char 23 */
+  49.8910675381%, 61.7637058824% {
+    content: "It type thas future 💪";
+  }
+  /* string 2, char 23 */
+  49.8910675381%, 61.7637058824% {
+    content: "It type thas future 💪";
+  }
+  /* string 2, char 24 */
+  61.7647058824%, 62.1994357298% {
+    content: "It type thas future 💪";
+  }
+  /* string 2, char 25 */
+  62.2004357298%, 62.6351655773% {
+    content: "It type thas future ";
+  }
+  /* string 2, char 26 */
+  62.6361655773%, 63.0708954248% {
+    content: "It type thas future";
+  }
+  /* string 2, char 27 */
+  63.0718954248%, 63.5066252723% {
+    content: "It type thas futur";
+  }
+  /* string 2, char 28 */
+  63.5076252723%, 63.9423551198% {
+    content: "It type thas futu";
+  }
+  /* string 2, char 29 */
+  63.9433551198%, 64.3780849673% {
+    content: "It type thas fut";
+  }
+  /* string 2, char 30 */
+  64.3790849673%, 64.8138148148% {
+    content: "It type thas fu";
+  }
+  /* string 2, char 31 */
+  64.8148148148%, 65.2495446623% {
+    content: "It type thas f";
+  }
+  /* string 2, char 32 */
+  65.2505446623%, 65.6852745098% {
+    content: "It type thas ";
+  }
+  /* string 2, char 33 */
+  65.6862745098%, 66.1210043573% {
+    content: "It type thas";
+  }
+  /* string 2, char 34 */
+  66.1220043573%, 66.5567342048% {
+    content: "It type tha";
+  }
+  /* string 2, char 35 */
+  66.5577342048%, 66.9924640523% {
+    content: "It type th";
+  }
+  /* string 2, char 36 */
+  66.9934640523%, 67.4281938998% {
+    content: "It type t";
+  }
+  /* string 2, char 37 */
+  67.4291938998%, 67.8639237473% {
+    content: "It type ";
+  }
+  /* string 2, char 38 */
+  67.8649237473%, 68.2996535948% {
+    content: "It type";
+  }
+  /* string 2, char 39 */
+  68.3006535948%, 68.7353834423% {
+    content: "It typ";
+  }
+  /* string 2, char 40 */
+  68.7363834423%, 69.1711132898% {
+    content: "It ty";
+  }
+  /* string 2, char 41 */
+  69.1721132898%, 69.6068431373% {
+    content: "It t";
+  }
+  /* string 2, char 42 */
+  69.6078431373%, 70.0425729847% {
+    content: "It ";
+  }
+  /* string 2, char 43 */
+  70.0435729847%, 70.4783028322% {
+    content: "It";
+  }
+  /* string 2, char 44 */
+  70.4793028322%, 70.9140326797% {
+    content: "I";
+  }
+  /* string 2, char 45 */
+  70.9150326797%, 71.3497625272% {
+    content: "█░";
+  }
+  /* string 2, char 46 */
+  71.3507625272%, 76.7963856209% {
+    content: "​";
+  }
+  /* string 3, char 1 */
+  76.7973856209%, 77.3410479303% {
+    content: "E";
+  }
+  /* string 3, char 2 */
+  77.3420479303%, 77.8857102397% {
+    content: "En";
+  }
+  /* string 3, char 3 */
+  77.8867102397%, 78.430372549% {
+    content: "Enj";
+  }
+  /* string 3, char 4 */
+  78.431372549%, 78.9750348584% {
+    content: "Enjo";
+  }
+  /* string 3, char 5 */
+  78.9760348584%, 79.5196971678% {
+    content: "Enjoy";
+  }
+  /* string 3, char 6 */
+  79.5206971678%, 80.0643594771% {
+    content: "Enjoy ";
+  }
+  /* string 3, char 7 */
+  80.0653594771%, 91.9379978214% {
+    content: "Enjoy ☕";
+  }
+  /* string 3, char 8 */
+  91.9389978214%, 92.3737276688% {
+    content: "Enjoy ";
+  }
+  /* string 3, char 9 */
+  92.3747276688%, 92.8094575163% {
+    content: "Enjoy";
+  }
+  /* string 3, char 10 */
+  92.8104575163%, 93.2451873638% {
+    content: "Enjo";
+  }
+  /* string 3, char 11 */
+  93.2461873638%, 93.6809172113% {
+    content: "Enj";
+  }
+  /* string 3, char 12 */
+  93.6819172113%, 94.1166470588% {
+    content: "En";
+  }
+  /* string 3, char 13 */
+  94.1176470588%, 94.5523769063% {
+    content: "E";
+  }
+  /* string 3, char 14 */
+  94.5533769063%, 100% {
+    content: "​";
+  }
+}
+@keyframes typed {
+  /* string 1, char 1 */
+  0%, 0.5436623094% {
+    content: "HI";
+  }
+  /* string 1, char 2 */
+  0.5446623094%, 1.0883246187% {
+    content: "HI W";
+  }
+  /* string 1, char 3 */
+  1.0893246187%, 1.6329869281% {
+    content: "HI WE";
+  }
+  /* string 1, char 4 */
+  1.6339869281%, 2.1776492375% {
+    content: "HI Wel";
+  }
+  /* string 1, char 5 */
+  2.1786492375%, 2.7223115468% {
+    content: "HI Welc";
+  }
+  /* string 1, char 6 */
+  2.7233115468%, 3.2669738562% {
+    content: "HI Welco";
+  }
+  /* string 1, char 7 */
+  3.2679738562%, 3.8116361656% {
+    content: "HI Welcom";
+  }
+  /* string 1, char 8 */
+  3.8126361656%, 4.3562984749% {
+    content: "HI Welcome ";
+  }
+  /* string 1, char 9 */
+  4.3572984749%, 4.9009607843% {
+    content: "HI Welcome To";
+  }
+  /* string 1, char 10 */
+  4.9019607843%, 5.4456230937% {
+    content: "HI Welcome To ";
+  }
+  /* string 1, char 11 */
+  5.4466230937%, 5.9902854031% {
+    content: "HI Welcome To A";
+  }
+  /* string 1, char 12 */
+  5.9912854031%, 6.5349477124% {
+    content: "HI Welcome To Ap";
+  }
+  /* string 1, char 13 */
+  6.5359477124%, 7.0796100218% {
+    content: "HI Welcome To App";
+  }
+  /* string 1, char 14 */
+  7.0806100218%, 7.6242723312% {
+    content: "HI Welcome To AppT";
+  }
+  /* string 1, char 15 */
+  7.6252723312%, 8.1689346405% {
+    content: "HI Welcome To AppTa";
+  }
+  /* string 1, char 16 */
+  8.1699346405%, 8.7135969499% {
+    content: "HI Welcome To AppTal";
+  }
+  /* string 1, char 17 */
+  8.7145969499%, 9.2582592593% {
+    content: "HI Welcome To AppTale";
+  }
+  /* string 1, char 18 */
+  9.2592592593%, 9.8029215686% {
+    content: "HI Welcome To AppTalen";
+  }
+  /* string 1, char 19 */
+  9.8039215686%, 10.347583878% {
+    content: "HI Welcome To AppTalenD";
+  }
+  /* string 1, char 20 */
+  10.348583878%, 10.8922461874% {
+    content: "HI Welcome To AppTalenDa";
+  }
+  /* string 1, char 21 */
+  10.8932461874%, 11.4369084967% {
+    content: "HI Welcome To AppTalenDay";
+  }
+  /* string 1, char 22 */
+  11.4379084967%, 23.310546841% {
+    content: "HI Welcome To AppTalenDay!";
+  }
+  /* string 1, char 23 */
+  23.311546841%, 23.7462766885% {
+    content: "HI Welcome To AppTalenDa";
+  }
+  /* string 1, char 24 */
+  23.7472766885%, 24.1820065359% {
+    content: "HI Welcome To AppTalenD";
+  }
+  /* string 1, char 25 */
+  24.1830065359%, 24.6177363834% {
+    content: "HI Welcome To AppTalen";
+  }
+  /* string 1, char 26 */
+  24.6187363834%, 25.0534662309% {
+    content: "HI Welcome To AppTale";
+  }
+  /* string 1, char 27 */
+  25.0544662309%, 25.4891960784% {
+    content: "HI Welcome To AppTa";
+  }
+  /* string 1, char 28 */
+  25.4901960784%, 25.9249259259% {
+    content: "HI Welcome To AppT";
+  }
+  /* string 1, char 29 */
+  25.9259259259%, 26.3606557734% {
+    content: "HI Welcome To App";
+  }
+  /* string 1, char 30 */
+  26.3616557734%, 26.7963856209% {
+    content: "HI Welcome To Ap";
+  }
+  /* string 1, char 31 */
+  26.7973856209%, 27.2321154684% {
+    content: "HI Welcome To A";
+  }
+  /* string 1, char 32 */
+  27.2331154684%, 27.6678453159% {
+    content: "HI Welcome To ";
+  }
+  /* string 1, char 33 */
+  27.6688453159%, 28.1035751634% {
+    content: "HI Welcome To";
+  }
+  /* string 1, char 34 */
+  28.1045751634%, 28.5393050109% {
+    content: "Welcome ";
+  }
+  /* string 1, char 35 */
+  28.5403050109%, 28.9750348584% {
+    content: "HI Welcome";
+  }
+  /* string 1, char 36 */
+  28.9760348584%, 29.4107647059% {
+    content: "HI Welcom";
+  }
+  /* string 1, char 37 */
+  29.4117647059%, 29.8464945534% {
+    content: "HI Welco";
+  }
+  /* string 1, char 38 */
+  29.8474945534%, 30.2822244009% {
+    content: "HI Welc";
+  }
+  /* string 1, char 39 */
+  30.2832244009%, 30.7179542484% {
+    content: "HI Wel";
+  }
+  /* string 1, char 40 */
+  30.7189542484%, 31.1536840959% {
+    content: "HI We";
+  }
+  /* string 1, char 41 */
+  31.1546840959%, 31.5894139434% {
+    content: "HI W";
+  }
+  /* string 1, char 42 */
+  31.5904139434%, 32.0251437908% {
+    content: "Bye";
+  }
+  /* string 1, char 43 */
+  32.0261437908%, 32.4608736383% {
+    content: "Bye";
+  }
+  /* string 1, char 44 */
+  32.4618736383%, 37.907496732% {
+    content: "​";
+  }
+/* string 1, char 44 */
+32.4618736383%, 37.907496732% {
+    content: "▓";
+  }
+  /* string 2, char 1 */
+  37.908496732%, 38.4521590414% {
+    content: "▐";
+  }
+  /* string 2, char 2 */
+  38.4531590414%, 38.9968213508% {
+    content: "█░";
+  }
+  /* string 2, char 3 */
+  38.9978213508%, 39.5414836601% {
+    content: "█░ ";
+  }
+  /* string 2, char 4 */
+  39.5424836601%, 40.0861459695% {
+    content: "█░ ▓";
+  }
+  /* string 2, char 5 */
+  40.0871459695%, 40.6308082789% {
+    content: "█░ ▓▒";
+  }
+  /* string 2, char 6 */
+  40.6318082789%, 41.1754705882% {
+    content: "█░ ▓▒▒";
+  }
+  /* string 2, char 7 */
+  41.1764705882%, 41.7201328976% {
+    content: "█░ ▓▒▒▓";
+  }
+  /* string 2, char 8 */
+  41.7211328976%, 42.264795207% {
+    content: "█░ ▓▒▒▓▒";
+  }
+  /* string 2, char 9 */
+  42.265795207%, 42.8094575163% {
+    content: "█░ ▓▒▒▓▒ ";
+  }
+  /* string 2, char 10 */
+  42.8104575163%, 43.3541198257% {
+    content: "█░ ▓▒▒▓▒ ▓";
+  }
+  /* string 2, char 11 */
+  43.3551198257%, 43.8987821351% {
+    content: "█░ typ▒▓▒ ▓▒";
+  }
+  /* string 2, char 12 */
+  43.8997821351%, 44.4434444444% {
+    content: "█░ type ▓▒▓";
+  }
+  /* string 2, char 13 */
+  44.4444444444%, 44.9881067538% {
+    content: "█░ ▓▒▒▓▒ ▓▒▓▒";
+  }
+  /* string 2, char 14 */
+  44.9891067538%, 45.5327690632% {
+    content: "█░ type ▓▒▓▒ ";
+  }
+  /* string 2, char 15 */
+  45.5337690632%, 46.0774313725% {
+    content: "█░ ▓▒▒▓▒ ▓▒▓▒ █";
+  }
+  /* string 2, char 16 */
+  46.0784313725%, 46.6220936819% {  
+    content: "█░ ▓▒▒▓▒ ▓▒▓▒ █░";
+  }
+  /* string 2, char 17 */
+  46.6230936819%, 47.1667559913% {
+    content: "█░ ▓▒▒▓▒ ▓▒▓▒ █░▒";
+  }
+  /* string 2, char 18 */
+  47.1677559913%, 47.7114183007% {
+    content: "█░ ▓▒▒▓▒ ▓▒▓▒ █░▒▓";
+  }
+  /* string 2, char 19 */
+  47.7124183007%, 48.25608061% {
+    content: "█░ ▓▒▒▓▒ ▓▒▓▒ futu▒";
+  }
+  /* string 2, char 20 */
+  48.25708061%, 48.8007429194% {
+    content: "█░ ▓▒▒▓▒ ▓▒▓▒ futur";
+  }
+  /* string 2, char 21 */
+  48.8017429194%, 49.3454052288% {
+    content: "█░ ▓▒▒▓▒ ▓▒▓▒ █░▒▓▒▓▒";
+  }
+  /* string 2, char 22 */
+  49.3464052288%, 49.8900675381% {
+    content: "█░ ▓▒▒▓▒ ▓▒▓▒ █░▒▓▒▓▒ ";
+  }
+  /* string 2, char 23 */
+  49.8910675381%, 61.7637058824% {
+    content: "It type thas future 💪";
+  }
+  /* string 2, char 23 */
+  49.8910675381%, 61.7637058824% {
+    content: "It type thas future 💪";
+  }
+  /* string 2, char 24 */
+  61.7647058824%, 62.1994357298% {
+    content: "It type thas future 💪";
+  }
+  /* string 2, char 25 */
+  62.2004357298%, 62.6351655773% {
+    content: "It type thas future ";
+  }
+  /* string 2, char 26 */
+  62.6361655773%, 63.0708954248% {
+    content: "It type thas future";
+  }
+  /* string 2, char 27 */
+  63.0718954248%, 63.5066252723% {
+    content: "It type thas futur";
+  }
+  /* string 2, char 28 */
+  63.5076252723%, 63.9423551198% {
+    content: "It type thas futu";
+  }
+  /* string 2, char 29 */
+  63.9433551198%, 64.3780849673% {
+    content: "It type thas fut";
+  }
+  /* string 2, char 30 */
+  64.3790849673%, 64.8138148148% {
+    content: "It type thas fu";
+  }
+  /* string 2, char 31 */
+  64.8148148148%, 65.2495446623% {
+    content: "It type thas f";
+  }
+  /* string 2, char 32 */
+  65.2505446623%, 65.6852745098% {
+    content: "It type thas ";
+  }
+  /* string 2, char 33 */
+  65.6862745098%, 66.1210043573% {
+    content: "It type thas";
+  }
+  /* string 2, char 34 */
+  66.1220043573%, 66.5567342048% {
+    content: "It type tha";
+  }
+  /* string 2, char 35 */
+  66.5577342048%, 66.9924640523% {
+    content: "It type th";
+  }
+  /* string 2, char 36 */
+  66.9934640523%, 67.4281938998% {
+    content: "It type t";
+  }
+  /* string 2, char 37 */
+  67.4291938998%, 67.8639237473% {
+    content: "It type ";
+  }
+  /* string 2, char 38 */
+  67.8649237473%, 68.2996535948% {
+    content: "It type";
+  }
+  /* string 2, char 39 */
+  68.3006535948%, 68.7353834423% {
+    content: "It typ";
+  }
+  /* string 2, char 40 */
+  68.7363834423%, 69.1711132898% {
+    content: "It ty";
+  }
+  /* string 2, char 41 */
+  69.1721132898%, 69.6068431373% {
+    content: "It t";
+  }
+  /* string 2, char 42 */
+  69.6078431373%, 70.0425729847% {
+    content: "It ";
+  }
+  /* string 2, char 43 */
+  70.0435729847%, 70.4783028322% {
+    content: "It";
+  }
+  /* string 2, char 44 */
+  70.4793028322%, 70.9140326797% {
+    content: "I";
+  }
+  /* string 2, char 45 */
+  70.9150326797%, 71.3497625272% {
+    content: "█░";
+  }
+  /* string 2, char 46 */
+  71.3507625272%, 76.7963856209% {
+    content: "​";
+  }
+  /* string 3, char 1 */
+  76.7973856209%, 77.3410479303% {
+    content: "E";
+  }
+  /* string 3, char 2 */
+  77.3420479303%, 77.8857102397% {
+    content: "En";
+  }
+  /* string 3, char 3 */
+  77.8867102397%, 78.430372549% {
+    content: "Enj";
+  }
+  /* string 3, char 4 */
+  78.431372549%, 78.9750348584% {
+    content: "Enjo";
+  }
+  /* string 3, char 5 */
+  78.9760348584%, 79.5196971678% {
+    content: "Enjoy";
+  }
+  /* string 3, char 6 */
+  79.5206971678%, 80.0643594771% {
+    content: "Enjoy ";
+  }
+  /* string 3, char 7 */
+  80.0653594771%, 91.9379978214% {
+    content: "Enjoy ☕";
+  }
+  /* string 3, char 8 */
+  91.9389978214%, 92.3737276688% {
+    content: "Enjoy ";
+  }
+  /* string 3, char 9 */
+  92.3747276688%, 92.8094575163% {
+    content: "Enjoy";
+  }
+  /* string 3, char 10 */
+  92.8104575163%, 93.2451873638% {
+    content: "Enjo";
+  }
+  /* string 3, char 11 */
+  93.2461873638%, 93.6809172113% {
+    content: "Enj";
+  }
+  /* string 3, char 12 */
+  93.6819172113%, 94.1166470588% {
+    content: "En";
+  }
+  /* string 3, char 13 */
+  94.1176470588%, 94.5523769063% {
+    content: "E";
+  }
+  /* string 3, char 14 */
+  94.5533769063%, 100% {
+    content: "​";
+  }
+}
+@-webkit-keyframes beam-blink {
+  75% {
+    border-color: transparent;
+  }
+}
+@keyframes beam-blink {
+  75% {
+    border-color: transparent;
+  }
+}
+/* Btn 10  */
+.btn10{
+    top: 10px;
+    width:100px;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase!important;
+    letter-spacing: 2px;
+    color: #fff;
+    cursor: hand;
+    text-align: center;
+    text-transform: capitalize;
+    border: 1px solid #fff;
+    border-radius:50px;
+    position: relative;
+    overflow: hidden!important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: transparent!important;
+    z-index:10;
+    
+}
+
+
+.btn10:hover{
+    border: 1px solid #071982;
+    color: #80ffd3!important;
+}
+.btn10::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    display: block;
+    background: #071982;
+    position: absolute;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg); 
+    transform: skewX(-20deg);   
+    left: -10%;
+    opacity: 1;
+    top: 0;
+    z-index: -12;
+    -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+     box-shadow:2px 0px 14px rgba(0,0,0,.6);
+  } 
+
+.btn10::after {
+    content: '';
+    width: 0%;
+    height: 100%;
+    display: block;
+    background: #80ffd3;
+    position: absolute;
+  -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg); 
+    transform: skewX(-20deg);   
+    left: -10%;
+    opacity: 0;
+    top: 0;
+    z-index: -15;
+    -webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+    -moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    -o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    box-shadow: 2px 0px 14px rgba(0,0,0,.6);
+}
+.btn10:hover::before, .btn1O:hover::before{
+  opacity:1;
+  width: 116%;
+}
+.btn10:hover::after, .btn1O:hover::after{
+  opacity:1;
+  width: 120%;
+}
+h2{
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    margin-top: 70px;
+    margin-bottom:20px;
+  }
+  
+  
+  /* Wrapper Is not Needed| Just for demo purpose.  */
+  .wrapper {
+    margin: 50px auto;
+    text-align: center;
+    width: 100%;
+    position: relative;
+  }
+  .btn, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7, .btn10{
+    padding: 15px 90px;
+    margin:10px 4px;
+    color: #fff;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display:inline-block;
+    
+  }
+  
+  .btn::before {
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: #6098FF;
+    display: block;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+    transition: transform 0.4s cubic-bezier(1, 0, 0, 1)
+  }
+  
+  .btn:hover::before {
+    -webkit-transform-origin: right top;
+    -ms-transform-origin: right top;
+    transform-origin: right top;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1)
+  }

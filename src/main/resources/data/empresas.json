@@ -1,0 +1,46 @@
+{
+    "enterpriseName": "APIUX Tecnología",
+    "businessSector": "Transformación digital de industrias y el sector público.",
+    "finalCompany": true,
+    "headquarters": "Monseñor Sotero Sanz 100 - oficina 701, Santiago de Chile, CHILE",
+    "address": "Calle Montalban, 3 - Piso 2 DR, 28014, Madrid",
+    "zipCode": "28014",
+    "imageUrls":"",
+    "analisisEmpresa": [
+      {
+        "nubrEmployees": 300,
+        "finalCompany": true,
+        "longTermInterest": true,
+        "commonContact": null,
+        "linkNoticia1": "https://www.diarioestrategia.cl/texto-diario/mostrar/4727648/apiux-suma-18-colaboradores-como-nuevos-socios-compania",
+        "linkNoticia2": "https://www.glassdoor.es/Resumen/Trabajar-en-Apiux-Tecnología-EI_IE3295983.12,28.htm"
+      }
+    ],
+    "ofertas": [
+      {
+        "ofertasName": "https://www.linkedin.com/jobs/search/?currentJobId=3942095964&f_E=1%2C2%2C3&geoId=105646813&keywords=Apiux%20Tech%20java&origin=JOB_SEARCH_PAGE_JOB_FILTER&refresh=true&sortBy=R",
+        "jobPortal": "LinkedIn",
+        "recruiter": null,
+        "linkedinRecruiter": null,
+        "yearsExperience": 3,
+        "technologies": "Varias",
+        "observations": "Remoto"
+      },
+      {
+        "ofertasName": "https://www.linkedin.com/jobs/search/?currentJobId=4017455986&f_C=10244692&geoId=105646813&origin=JOB_SEARCH_PAGE_LOCATION_HISTORY&refresh=true",
+        "jobPortal": "LinkedIn",
+        "recruiter": null,
+        "linkedinRecruiter": null,
+        "yearsExperience": 5,
+        "technologies": "Sistemas",
+        "observations": "Vizcaya"
+      }
+    ],
+    "socialNetworks": [
+      {
+        "socNetName": "LinkedIn",
+        "socNetLink": "https://www.linkedin.com/company/api-ux/?originalSubdomain=es"
+      }
+    ]
+  }
+  
